@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>aurora</title>
+</head>
+<body>
+
+<div id="app">
+  <header>
+    <div class="container flex">
+      <div class="logo">
+        <router-link to="/">
+          <img src="src/assets/logo.png" alt="">
+        </router-link>
+      </div>
+
+      <div style="width: 150px; text-align: center">
+        Меню
+      </div>
+
+      <nav>
+        <router-link to="/about">О компании</router-link>
+        <router-link to="/press-center">Пресс-центр</router-link>
+        <router-link to="/question">Вопрос-ответ</router-link>
+        <router-link to="/partners">Партнерам</router-link>
+        <router-link to="/contacts">Контакты</router-link>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <router-view></router-view>
+  </main>
+
+  <footer>
+    footer
+  </footer>
+
+</div>
+
+
+
+
+
+<script src="/dist/build.js"></script>
+</body>
+</html>
