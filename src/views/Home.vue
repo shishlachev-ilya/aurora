@@ -9,9 +9,3 @@
 
   }
 </script>
-
-<style lang="scss">
-  .contacts {
-    color: #000;
-  }
-</style>

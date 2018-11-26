@@ -6,17 +6,17 @@
 </head>
 <body>
 
-<div id="app">
-  <header>
-    <div class="container flex">
+<div id="app" class="wrapper">
+  <header class="header">
+    <div class="container flex aic">
       <div class="logo">
         <router-link to="/">
-          <img src="src/assets/logo.png" alt="">
+          <img src="src/assets/img/logo.png" alt="">
         </router-link>
       </div>
 
-      <div style="width: 150px; text-align: center">
-        Меню
+      <div class="btn-menu">
+        <span>{{btnName}}</span>
       </div>
 
       <nav>
@@ -26,15 +26,22 @@
         <router-link to="/partners">Партнерам</router-link>
         <router-link to="/contacts">Контакты</router-link>
       </nav>
+
+      <div class="info">
+        <span class="info__title">Горячая линия:</span>
+        <a href="tel:0800303500" class="info__tel">0 800 303 500</a>
+        <span class="info__desc">Бесплатно по Украине</span>
+      </div>
+
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <router-view></router-view>
   </main>
 
-  <footer>
-    footer
+  <footer class="footer">
+    <span>© 2012-2017 «Аврора-Трейд Украина»</span>
   </footer>
 
 </div>

@@ -1,48 +1,9 @@
-@import "_color.scss";
-
-body {
-  margin: 0;
-  padding: 0;
-}
-header {
-  height: 80px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  max-width: 1200px;
-  margin: auto;
-  align-items: center;
-}
-
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "./common/basic-all";
+@import "header/_header";
+@import "footer/_footer";
 
 section h2 {
-  font-size: 100px;
-  display: block;
-}
-
-nav {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-
-  a {
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-}
-
-.flex {
-  display: flex;
-  align-items: center;
+  text-align: center;
+  @include font-size(50);
+  font-family: $heaavy;
 }

@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 87px;
+
+  border-bottom: 3px solid $red;
+}
+
+.btn-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 50px;
+
+  @include font-size(17);
+  font-family: $semibold;
+  color: #fff;
+
+  border-radius: 6px 12px 6px 12px;
+  background: linear-gradient(#c43b4d, #ad172b);
+  box-shadow: 0 4px 5px rgba(173,23,43, .51);
+  transition: background .3s ease;
+  transform: skew(-15deg);
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(#b7283b, #8f1223);
+  }
+
+  span {
+    display: inline-block;
+    transform: skew(15deg);
+  }
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1;
+
+  a {
+    display: inline-block;
+
+    @include font-size(17);
+    font-family: $semibold;
+    color: #000;
+
+    text-decoration: none;
+
+    & + a {
+      margin: 0 0 0 30px;
+    }
+  }
+
+  .router-link-active {
+    color: $red;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 15px;
+    font-family: $semibold;
+    color: $red;
+  }
+
+  &__tel {
+    font-size: 18px;
+    font-family: $semibold;
+    color: #000;
+
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 15px;
+    font-family: $book;
+    color: $gray;
+  }
+}

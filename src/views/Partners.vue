@@ -1,12 +1,27 @@
 <template>
-  <section class="partners">
-    <h2>Партнерам</h2>
-  </section>
+  <div>
+    <section class="partners">
+      <h2>Партнерам</h2>
+    </section>
+
+    <div class="container">
+      <some></some>
+    </div>
+  </div>
 </template>
 
 <script>
-  export default {
+  import some from '../components/Custom.vue';
 
+  export default {
+    data() {
+      return {
+
+      }
+    },
+    components: {
+      some
+    }
   }
 </script>
 
